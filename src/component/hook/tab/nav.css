@@ -1,0 +1,36 @@
+.menu{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.contain{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+.contain p{
+    color: #44d7b6;
+    font-family: Satisfy, cursive;
+    font-size: 1.5rem;
+}
+.nav_{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 20px auto;
+}
+.nav_ li {
+    list-style: none;
+}
+.nav_ li button{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.nav_ li button.active{
+    background-color: rgb(63, 206, 99);
+
+}

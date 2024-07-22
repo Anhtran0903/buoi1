@@ -1,9 +1,10 @@
 import React from 'react';
+import Menu from '../hook/tab/Menu';
 
 function Header(props) {
     return (
         <div>
-                <h1>Header</h1>
+               <Menu/>
         </div>
     );
 }
