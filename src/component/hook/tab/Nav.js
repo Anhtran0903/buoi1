@@ -26,22 +26,7 @@ Perfect destination
 
 <Container>
     
-   <ul className='nav_'>
-        <li>
-            <Button>asd</Button>
-        </li>
-        <li>
-            <Button >asd</Button>
-        </li>
-        <li>
-            <Button>asd</Button>
-        </li>
-        <li>
-            <Button>asd</Button>
-        </li>
-
-   </ul>
-    
+  
     
     </Container>  
        

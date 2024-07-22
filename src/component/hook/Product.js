@@ -14,6 +14,7 @@ function Product(props) {
   outline
   style={{
     width: '18rem',
+    height: '29rem',  
     border:'none',
     boxShadow:'0px 0px 5px 1px gray'
   }}
@@ -23,17 +24,18 @@ function Product(props) {
     src={pro.img}
   />
   <CardBody>
-    <CardTitle tag="h5">
+    <CardTitle tag="h5" className='text-muted'>
       {pro.category}
     </CardTitle>
     <CardSubtitle
-      className="mb-2 text-muted"
+      className="mb-2 "
       tag="h6"
+
     >
   {pro.title}
     </CardSubtitle>
     <CardText>
-      Some quick example text to build on the card title and make up the bulk of the card‘s content.
+
     </CardText>
     {pro.price}
   </CardBody>

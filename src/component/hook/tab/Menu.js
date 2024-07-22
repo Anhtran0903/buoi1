@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
+import { Button, Collapse, Container, DropdownItem, DropdownMenu, DropdownToggle, Input, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 
 function Menu(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,35 +7,50 @@ function Menu(props) {
     const toggle = () => setIsOpen(isOpen);
 
     return (
-        <div>
+        <div className='header'>
+          <Container>
+
+
+           
       <Navbar expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+         <NavbarBrand href="/">
+      <img
+        alt="logo"
+        src="/logo-white.svg"
+        style={{
+          height: 40,
+          width: 40
+        }}
+      />
+      Reactstrap
+    </NavbarBrand>
+        <NavbarToggler Collapse navigation  onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar  >
+          <Nav className="me-auto " navbar>
+            <NavItem className="m-4">
+              <NavLink href="/components/">HOME</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="m-4">
               <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+               TOUR
               </NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            </NavItem  >
+            <NavItem className="m-4">
+              <NavLink href="https://github.com/reactstrap/reactstrap">
+               BLOG
+              </NavLink>
+            </NavItem  >
+            
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText>
+            <div className='d-flex '>
+            <Input className='me-2 form-control' /> <Button className='text-light border-light hover-bg-light btn btn-outline-success' >search</Button>
+
+            </div>
+          </NavbarText>
         </Collapse>
       </Navbar>
+      </Container>
     </div>
     );
 }

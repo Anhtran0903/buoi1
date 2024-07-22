@@ -177,7 +177,7 @@ special:true
             {
                     
                 
-                    listTour.filter(name =>name.category=='Los Angeles').map((items,index)  => (
+                    listTour.filter(name =>name.category=='New York').map((items,index)  => (
                     <Product key={index}  pro={items} />
                 )
                 )
