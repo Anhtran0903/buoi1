@@ -9,6 +9,7 @@ import Product from './component/hook/Product';
 import Products from './component/hook/Products';
 import Nav from './component/hook/tab/Nav';
 import Main from './component/main/Main';
+import Hook2 from './component/hook/Hook2';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
    <Header/>
       <Nav />
     <Products/>
-   
+    <Hook2/>
    </>
   );
 }
